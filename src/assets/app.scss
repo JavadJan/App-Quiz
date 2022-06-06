@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.App{
+    background: #f4f3f5;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 100vh;
+}
+.main{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230), url('https://media.istockphoto.com/photos/futuristic-office-with-holographic-screens-picture-id538195906?k=20&m=538195906&s=612x612&w=0&h=2xFxNGJp0dRtLA4_nweMNfOdssPsCandzSjA-ISDL6g=');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+    height: 100%;
+}
+.pyramid{
+    background: rgb(29, 40, 92);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    padding: 2rem;
+    padding-left: 0;
+
+    ul{
+        width: 100%;
+        padding-left: 0;
+        .moneyListItem{
+            list-style: none;
+            font-size: 1.4rem;
+            width: 100%;
+            display: flex;
+            transition: all 400ms ease-in-out;
+            // line-height: 2.2rem;
+            padding: 0.5rem;
+            // border: 2px solid green;
+            .moneyListItemNumber{
+                width: 18%;
+                // border: 2px solid green;
+            }
+        }
+        
+        .moneyListItem.active{
+            background: #0375f0;
+        }
+    }
+    
+}
