@@ -18,6 +18,78 @@
   background-size: cover;
   color: white;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  height: 50%;
+}
+.top .timer {
+  height: 80px;
+  width: 80px;
+  border: 4px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions {
+  height: 50%;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 90%;
+  min-width: 30%;
+}
+.questions h3 {
+  text-align: center;
+}
+.questions .question {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: linear-gradient(rgba(16, 0, 160, 0.4156862745), #000006);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid white;
+}
+.questions .answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.questions .answers .answer {
+  background: linear-gradient(rgba(16, 0, 160, 0.4156862745), #000006);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+.questions .answers .answer.active {
+  background: #0375f0;
+  cursor: pointer;
+}
+.questions .answers .answer:hover {
+  background: #0375f0;
+  cursor: pointer;
+}
+.questions .answers .answer.correct {
+  background: green;
+}
+.questions .answers .answer.wrong {
+  background: crimson;
 }
 
 .pyramid {
@@ -31,7 +103,7 @@
 }
 .pyramid ul {
   width: 100%;
-  padding-left: 1rem;
+  padding-left: 0;
 }
 .pyramid ul .moneyListItem {
   list-style: none;

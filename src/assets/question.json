@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "question": "what is Html?",
+        "answer": [
+            {
+                "case": "answer1",
+                "correct": false
+            },
+            {
+                "case": "answer2",
+                "correct": true
+            },
+            {
+                "case": "answer3",
+                "correct": false
+            },
+            {
+                "case": "answer4",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "what is CSS?",
+        "answer": [
+            {
+                "case": "answer1",
+                "correct": false
+            },
+            {
+                "case": "answer2",
+                "correct": true
+            },
+            {
+                "case": "answer3",
+                "correct": false
+            },
+            {
+                "case": "answer4",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "what is Javascript?",
+        "answer": [
+            {
+                "case": "answer1",
+                "correct": false
+            },
+            {
+                "case": "answer2",
+                "correct": true
+            },
+            {
+                "case": "answer3",
+                "correct": false
+            },
+            {
+                "case": "answer4",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "question": "what is React JS?",
+        "answer": [
+            {
+                "case": "answer1",
+                "correct": false
+            },
+            {
+                "case": "answer2",
+                "correct": true
+            },
+            {
+                "case": "answer3",
+                "correct": false
+            },
+            {
+                "case": "answer4",
+                "correct": false
+            }
+        ]
+    }
+]
