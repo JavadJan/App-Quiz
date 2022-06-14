@@ -37,6 +37,10 @@
   justify-content: center;
 }
 
+.timer {
+  background: linear-gradient(rgba(16, 0, 160, 0.4156862745), #000006);
+}
+
 .questions {
   height: 50%;
   padding: 10px;
@@ -79,17 +83,109 @@
 }
 .questions .answers .answer.active {
   background: #0375f0;
-  cursor: pointer;
 }
 .questions .answers .answer:hover {
-  background: #0375f0;
   cursor: pointer;
+  background: #0375f0;
 }
 .questions .answers .answer.correct {
   background: green;
+  -webkit-animation: correct 500ms ease;
+          animation: correct 500ms ease;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 .questions .answers .answer.wrong {
   background: crimson;
+  -webkit-animation: wrong 500ms ease;
+          animation: wrong 500ms ease;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+@-webkit-keyframes wrong {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
+}
+@keyframes wrong {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
+}
+@-webkit-keyframes correct {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: crimson;
+  }
+}
+@keyframes correct {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: crimson;
+  }
+}
+
+.endText {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 4rem;
+  background: crimson;
+}
+.endText span {
+  color: rgb(10, 252, 10);
+  font-weight: 600;
 }
 
 .pyramid {

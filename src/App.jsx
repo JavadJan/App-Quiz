@@ -6,16 +6,19 @@ function App() {
 
   //send ON : question to components question
   const [questionNumber, setQuestionNumber] = useState(1)
+  const[amount,setEmount]=useState('$ 0')
   //send set time to every question
-  const[timeOut,setTimeOut]=useState(false)
+  // setEmount(document.getElementsByClassName('moneyListItem active'))
   return (
     <div className="App">
       <Quiz 
       setQuestionNumber={setQuestionNumber} 
-      setTimeOut={setTimeOut}
+      
       questionNumber={questionNumber}
+      amount={amount}
       />
-      <Award questionNumber={questionNumber}/>
+      <Award questionNumber={questionNumber}
+      />
     </div>
   );
 }
